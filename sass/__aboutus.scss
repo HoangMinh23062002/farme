@@ -1,0 +1,54 @@
+.about-us{
+    height: 750px;
+    text-align: center;
+    background-color: lightgray;
+    .read-more{
+        border-radius: 10px;
+        width: 172px;
+        height: 50px;
+        color: white;
+        background-color: black;
+    }
+    .overall-about-us {
+        top: 50%;
+        right: 50%;
+     
+        h1{
+            padding-top:15% ;
+        }
+        p{
+            margin-left: 27%;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            line-height: 1.4rem;
+        }
+    }
+}
+@media screen and (max-width: 925px) {
+    .about-us{
+        height: 700px;
+        .overall-about-us{
+        p{
+            margin-left: 9%;
+            width: 80%;
+        }
+        h1{
+            padding-top:15% ;
+        }
+    }
+}    
+}
+@media screen and (max-width: 666px) {
+    .about-us{
+        height: 650px;
+        .overall-about-us{
+        p{
+          font-size: 13px;
+        }
+        h1{
+            font-size: 18px;
+        }
+    }
+}    
+}

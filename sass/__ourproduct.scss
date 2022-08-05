@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,600;1,200&display=swap');
+.product-menu{
+    border-radius: 10px;
+    margin: 0 10.5%;
+    text-align: center;
+    background-color: #E1E1E1;
+    .product-menu-bar{
+        display: flex;
+        justify-content: center; 
+        .index{
+            border-bottom:3px solid ;
+            font-weight: 700;
+            }
+        }
+        li{
+            font-size: 18px;
+            padding: 20px 40px;
+            list-style: none;
+        a{
+            color: $color-menu;
+            text-decoration: none;
+        }
+    }
+}
+.cart-list{
+    margin: 0 10%;
+    .detail-cart{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        .detail-cart-item{
+            width: 376px;
+            height: 247px;
+            background-color: #E1E1E1;
+        }
+        .cart-item:nth-last-child(-n+2) {
+            margin-left: 2.5%;
+        } 
+    }
+}
+.infor-item p{
+    font-family: $font;
+    color: $color-menu;
+}
+@media screen and (max-width: 909px) {
+    .product-menu{
+            li{
+                font-size: 16px;
+                padding: 17px 20px;
+          
+    }
+}    
+}
+@media screen and (max-width: 594px) {
+  .infor-item{
+    text-align: center;
+    h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .product-menu{
+        li{
+            background-color: red;
+            font-size: 10px;
+            padding: 10px 0px;
+      
+        }
+    }
+    }    
+}
+@media screen and (max-width: 666px) {
+    .product-menu{
+        margin: 0 5%;
+
+        .product-menu-bar{
+            .index{
+                border-bottom:3px solid ;
+                font-weight: 700;
+                }
+            }
+            li{
+                font-size: 14px;
+                padding: 10px 2%;
+        }
+    }
+    .infor-item{
+        text-align: center;
+     h2{
+        font-size:16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    }
+    .product-title h3{
+        font-size: 19px;
+    }
+  }

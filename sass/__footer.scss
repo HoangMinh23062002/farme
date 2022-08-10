@@ -2,39 +2,58 @@
     background-color: #404040;
     height: 530px;
     color: white;
+    & .footer-content{
+        width: 100%;
     .title-footer{
-     text-align: center;
-     justify-content: center;
-     padding: 3% 0 0 0;
+     padding: 3.2% 0 0 0;
+     & .footer-signup{
+        justify-content: space-around;
+        margin: 0 30%;
+        border-radius: 20px;
+        height: 48px;
+        background-color: white;
+     
+        & button{
+            outline: none;
+            border: white;
+            background-color: white;
+        }
+     }
         h3{
+            text-align: center;
             font-size: 16px;
             line-height: 24px;
             font-family: 'Times New Roman', Times, serif;
         }
-        .input{
+        & .input{
             outline: none;
         }
         input{
+            padding: 20px;
             outline: none;
             height: 36px;
-            width: 40%;
+            width: 70%;
             border-radius: 15px;
+            border: 1px solid white;
         }
     }
-    .brand-name-footer{
+    & .brand-name-footer{
         flex-wrap: wrap;
         display: flex;
+        margin-top: 64px;
+        font-size: 15px;
         justify-content: center;
-        .branch{
+        & .branch{
             font-size: 32px;
         }
-        .label{
-            padding: 5%;
+        & .label{
+            padding: 0 5%;
+            margin-bottom: 60px;
         }
-        .site, .term{
+        & .site, & .term{
             color:$color-menu ;
         }
-        .link {
+        & .link {
             margin-top: 44%;
             li{
                 padding: 9% 0;
@@ -42,9 +61,9 @@
                 list-style: none;
             }
         }
-        .character{
+        & .character{
             display: flex;
-            .circle{
+            & .circle{
                 margin: 0 10px;
                 border:1px solid #fff;    
                 height:20px;
@@ -54,15 +73,16 @@
                 width:20px;
             }
         } 
-    }
+    }}
 }
 .copyright{
+    margin: 32px 0;
     text-align: center;
 }
 .horizontal-car{
     color: lightgray;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 4.15%;
 }
 
 @media screen and (max-width: 614px) {
@@ -72,4 +92,13 @@
     .title-footer input{
 
     }
+}
+@media screen and (max-width: 800px) {
+    .footer .footer-content .title-footer .footer-signup {
+        justify-content: space-around;
+        margin: 0 10%;
+        border-radius: 20px;
+        // background-color: red;
+    }
+    
 }

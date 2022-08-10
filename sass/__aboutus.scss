@@ -1,20 +1,24 @@
 .about-us{
-    height: 750px;
+    height: 900px;
     text-align: center;
     background-color: lightgray;
-    .read-more{
+    & .read-more{
         border-radius: 10px;
         width: 172px;
         height: 50px;
+        right: 45%;
+        position: absolute;
+        margin-top: 34.9%;
         color: white;
         background-color: black;
     }
+
     .overall-about-us {
-        top: 50%;
-        right: 50%;
+        margin-top: 19.6%;
+        position: absolute;
      
-        h1{
-            padding-top:15% ;
+        & h1{
+            margin-bottom: 32px;
         }
         p{
             margin-left: 27%;
@@ -28,7 +32,7 @@
 @media screen and (max-width: 925px) {
     .about-us{
         height: 700px;
-        .overall-about-us{
+        & .overall-about-us{
         p{
             margin-left: 9%;
             width: 80%;
@@ -52,3 +56,70 @@
     }
 }    
 }
+@media screen and (max-width: 1350px) {
+    .about-us{
+
+        & .read-more{
+            right: 42%;
+            margin-top: 54.9%;
+            
+        }
+    }
+}
+@media screen and (max-width: 1040px) {
+    .about-us{
+
+        & .read-more{
+            right: 40%;
+            margin-top: 43.9%;
+            
+        }
+    }
+}
+@media screen and (max-width: 842px) {
+    .about-us{
+        height: 500px;
+        .overall-about-us {
+            margin-top: 1.6%;
+        & .read-more{
+            width: 102px;
+            height: 40px;
+            right: 36%;
+
+            color: white;
+        }
+    
+        }
+       
+            p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3; /* number of lines to show */
+                line-clamp: 3; 
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+    @media screen and (max-width: 610px) {
+        .about-us{
+    
+            & .read-more{
+                right: 40%;
+                margin-top: 56.9%;
+                width: 102px;
+                height: 40px;
+            }
+        }
+    }
+    @media screen and (max-width: 430px) {
+        .about-us{
+            height: 300px;
+            & .read-more{
+                right: 40%;
+                margin-top: 64.9%;
+                width: 94px;
+                height: 36px;
+            }
+        }
+    }

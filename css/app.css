@@ -30,7 +30,8 @@ header {
 }
 
 .head_container {
-  padding: 20px;
+  padding: 7px;
+  height: 80px;
   margin: 0 10%;
   overflow: hidden;
 }
@@ -105,29 +106,42 @@ header {
     margin: 0;
   }
 }
-@media screen and (max-width: 928px) {
+@media screen and (max-width: 844px) {
   .head_container {
     margin: 0 3%;
   }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 994px) {
   .head_container {
     margin: 0 3%;
+  }
+}
+@media screen and (max-width: 710px) {
+  .head_container {
+    margin: 0 3%;
+  }
+  .content-slider p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
   .menu li {
     display: none;
   }
   .icon {
     font-weight: 900 !important;
-    font-size: 27px !important;
+    font-size: 24px !important;
     padding: 0;
     margin: 0;
     margin-top: -22px;
-    margin-right: -22px;
+    margin-right: 0;
     display: flex;
   }
   .logo img {
-    height: 40px;
+    height: 35px;
   }
   .sidenav a {
     font-size: 16px;
@@ -171,8 +185,11 @@ header {
 }
 
 .swiper {
+  height: 800px;
+}
+
+.swiper {
   width: 100%;
-  height: 700px;
   background-color: #E1E1E1;
 }
 
@@ -202,11 +219,20 @@ header {
   width: 50%;
 }
 
-.feature-product h3, .product-title h3 {
+.product-title h3 {
   font-size: 32px;
   text-align: center;
   font-style: bold;
   line-height: 39px;
+  margin-top: 118px;
+}
+
+.feature-product h3 {
+  font-size: 32px;
+  text-align: center;
+  font-style: bold;
+  line-height: 39px;
+  margin-top: 68px;
 }
 
 .content-square {
@@ -299,6 +325,9 @@ header {
   }
 }
 @media screen and (max-width: 710px) {
+  .swiper {
+    height: 400px;
+  }
   .content-second-sub .secondsub-content {
     margin: 32px 0px 0px 0px;
   }
@@ -321,6 +350,7 @@ header {
 }
 .product-menu .product-menu-bar {
   display: flex;
+  height: 64px;
   justify-content: center;
 }
 .product-menu .product-menu-bar .index {
@@ -336,11 +366,12 @@ header {
   color: #656565;
   text-decoration: none;
 }
-
-.cart-list {
-  margin: 0 10%;
+.product-menu li i {
+  padding-left: 10px;
 }
+
 .cart-list .detail-cart {
+  margin-top: 32px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -350,8 +381,8 @@ header {
   height: 247px;
   background-color: #E1E1E1;
 }
-.cart-list .detail-cart .cart-item:nth-last-child(-n+2) {
-  margin-left: 2.5%;
+.cart-list .detail-cart .cart-item {
+  padding: 0 16px;
 }
 
 .infor-item p {
@@ -360,9 +391,9 @@ header {
 }
 
 @media screen and (max-width: 909px) {
-  .product-menu li {
-    font-size: 16px;
-    padding: 17px 20px;
+  .product-menu .product-menu-bar li {
+    font-size: 14px;
+    padding: 23px 17px;
   }
 }
 @media screen and (max-width: 594px) {
@@ -375,39 +406,39 @@ header {
   .infor-item p {
     font-size: 12px;
   }
-  .infor-item .product-menu li {
-    background-color: red;
+  .infor-item .product-menu .product-menu-bar li {
     font-size: 10px;
-    padding: 10px 0px;
+    padding: 10px 10px;
   }
 }
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 500px) {
+  .cart-list .detail-cart .cart-item {
+    background-color: red;
+  }
   .product-menu {
-    margin: 0 5%;
+    margin: 0 0;
   }
-  .product-menu .product-menu-bar .index {
-    border-bottom: 3px solid;
-    font-weight: 700;
+  .product-menu .product-menu-bar {
+    margin-left: -40px;
   }
-  .product-menu li {
-    font-size: 14px;
-    padding: 10px 2%;
+  .product-menu .product-menu-bar li {
+    font-size: 13px;
   }
-  .infor-item {
+  .product-menu .infor-item {
     text-align: center;
   }
-  .infor-item h2 {
+  .product-menu .infor-item h2 {
     font-size: 16px;
   }
-  .infor-item p {
+  .product-menu .infor-item p {
     font-size: 12px;
   }
-  .product-title h3 {
+  .product-menu .product-title h3 {
     font-size: 19px;
   }
 }
 .about-us {
-  height: 750px;
+  height: 900px;
   text-align: center;
   background-color: lightgray;
 }
@@ -415,15 +446,18 @@ header {
   border-radius: 10px;
   width: 172px;
   height: 50px;
+  right: 45%;
+  position: absolute;
+  margin-top: 34.9%;
   color: white;
   background-color: black;
 }
 .about-us .overall-about-us {
-  top: 50%;
-  right: 50%;
+  margin-top: 19.6%;
+  position: absolute;
 }
 .about-us .overall-about-us h1 {
-  padding-top: 15%;
+  margin-bottom: 32px;
 }
 .about-us .overall-about-us p {
   margin-left: 27%;
@@ -456,56 +490,128 @@ header {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 1350px) {
+  .about-us .read-more {
+    right: 42%;
+    margin-top: 54.9%;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .about-us .read-more {
+    right: 40%;
+    margin-top: 43.9%;
+  }
+}
+@media screen and (max-width: 842px) {
+  .about-us {
+    height: 500px;
+  }
+  .about-us .overall-about-us {
+    margin-top: 1.6%;
+  }
+  .about-us .overall-about-us .read-more {
+    width: 102px;
+    height: 40px;
+    right: 36%;
+    color: white;
+  }
+  .about-us p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+@media screen and (max-width: 610px) {
+  .about-us .read-more {
+    right: 40%;
+    margin-top: 56.9%;
+    width: 102px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about-us {
+    height: 300px;
+  }
+  .about-us .read-more {
+    right: 40%;
+    margin-top: 64.9%;
+    width: 94px;
+    height: 36px;
+  }
+}
 .footer {
   background-color: #404040;
   height: 530px;
   color: white;
 }
-.footer .title-footer {
-  text-align: center;
-  justify-content: center;
-  padding: 3% 0 0 0;
+.footer .footer-content {
+  width: 100%;
 }
-.footer .title-footer h3 {
+.footer .footer-content .title-footer {
+  padding: 3.2% 0 0 0;
+}
+.footer .footer-content .title-footer .footer-signup {
+  justify-content: space-around;
+  margin: 0 30%;
+  border-radius: 20px;
+  height: 48px;
+  background-color: white;
+}
+.footer .footer-content .title-footer .footer-signup button {
+  outline: none;
+  border: white;
+  background-color: white;
+}
+.footer .footer-content .title-footer h3 {
+  text-align: center;
   font-size: 16px;
   line-height: 24px;
   font-family: "Times New Roman", Times, serif;
 }
-.footer .title-footer .input {
+.footer .footer-content .title-footer .input {
   outline: none;
 }
-.footer .title-footer input {
+.footer .footer-content .title-footer input {
+  padding: 20px;
   outline: none;
   height: 36px;
-  width: 40%;
+  width: 70%;
   border-radius: 15px;
+  border: 1px solid white;
 }
-.footer .brand-name-footer {
+.footer .footer-content .brand-name-footer {
   flex-wrap: wrap;
   display: flex;
+  margin-top: 64px;
+  font-size: 15px;
   justify-content: center;
 }
-.footer .brand-name-footer .branch {
+.footer .footer-content .brand-name-footer .branch {
   font-size: 32px;
 }
-.footer .brand-name-footer .label {
-  padding: 5%;
+.footer .footer-content .brand-name-footer .label {
+  padding: 0 5%;
+  margin-bottom: 60px;
 }
-.footer .brand-name-footer .site, .footer .brand-name-footer .term {
+.footer .footer-content .brand-name-footer .site, .footer .footer-content .brand-name-footer .term {
   color: #656565;
 }
-.footer .brand-name-footer .link {
+.footer .footer-content .brand-name-footer .link {
   margin-top: 44%;
 }
-.footer .brand-name-footer .link li {
+.footer .footer-content .brand-name-footer .link li {
   padding: 9% 0;
   color: white;
   list-style: none;
 }
-.footer .brand-name-footer .character {
+.footer .footer-content .brand-name-footer .character {
   display: flex;
 }
-.footer .brand-name-footer .character .circle {
+.footer .footer-content .brand-name-footer .character .circle {
   margin: 0 10px;
   border: 1px solid #fff;
   height: 20px;
@@ -516,18 +622,26 @@ header {
 }
 
 .copyright {
+  margin: 32px 0;
   text-align: center;
 }
 
 .horizontal-car {
   color: lightgray;
   width: 100%;
-  margin-top: 5%;
+  margin-top: 4.15%;
 }
 
 @media screen and (max-width: 614px) {
   .character {
     display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer .footer-content .title-footer .footer-signup {
+    justify-content: space-around;
+    margin: 0 10%;
+    border-radius: 20px;
   }
 }
 

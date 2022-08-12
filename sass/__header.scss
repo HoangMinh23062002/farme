@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,600;1,200&display=swap');
 *{
     box-sizing: border-box;
     font-family: $font;
@@ -13,39 +14,37 @@ header{
 	margin: 0 10%;
 	overflow: hidden;
 }
-.logo{
+.header-logo{
 	float:left;
-	margin-left: 20px;
 	img{
-		height: 50px;
+		display: flex;
+		height: 60px;
 	}
 }
 
-.menu{
+.header-menu{
 	margin-top:5px;
 	float:right;
 	ul{
 		list-style-type: none;
-			margin-right: -10px;
 	}
 	li{
 		display: inline;
-		margin-right-last:0px;
+		padding: 0 18px;
+
 	
 	}
 	a{
+		font-family: 'Montserrat', sans-serif;
 		text-decoration: none;
-		font-weight: 500;
 		color: black;
-			padding:10px;
-			padding-left: 15px;
-			padding-right: 15px; 
 	}
 	span{
 		background-color: black;
 		color: white;
 		padding: 6px 12px;
 		border-radius: 20px;
+		margin-left: 20px;
 	}
 	a:hover { 
 	transform: scale(1.4);
@@ -61,24 +60,56 @@ header{
 }
 .closebtn{
 	margin-top: 20px;
+	cursor: pointer;
+
 }
 .closebtn:hover{
 	transform:  scale(1.4);
-	cursor: pointer;
 }
 
 .icon{
 	display: none;
 }
+@media screen and (max-width: 1018px) {
+	.header-menu li{
+		display: none;
+	}
+	
+.icon{
+    font-weight: 900 !important;
+    font-size: 24px !important;
+    padding: 0;
+    margin: 0;
+	margin-TOP: -13PX;
+	margin-right: 0;
+    display: flex;
+	
+}
+}
+// @media screen and (max-width: 1018px) {
+// 	.menu{
+// 		display: none;
+// 	}
+// 	.icon{
+// 		font-weight: 900 !important;
+// 		font-size: 24px !important;
+// 		padding: 0;
+// 		margin: 0;
+// 		margin-top: -7;
+// 		margin-right: 0;
+// 		display: flex;
+		
+// 	}
+// }
 
 @media screen and (max-width: 835px) {
-	.logo img {
+	.header-logo img {
 	    height: 40px;
 	}
 	ul > li:first-of-type{
 		display:none;
 	}
-	.menu{
+	.header-menu{
 		margin:0;
 	}
 }
@@ -98,28 +129,9 @@ header{
 	.head_container {
 		margin: 0 3%;
 	}
-	.content-slider p{
-		overflow: hidden;
-		text-overflow: ellipsis;
-		display: -webkit-box;
-		-webkit-line-clamp: 3; /* number of lines to show */
-		line-clamp: 3; 
-		-webkit-box-orient: vertical;
-	}
-.menu li{
-	display: none;
-}
-.icon{
-    font-weight: 900 !important;
-    font-size: 24px !important;
-    padding: 0;
-    margin: 0;
-    margin-top: -22px;
-	margin-right: 0;
-    display: flex;
-	
-}
-	.logo img {
+
+
+	.header-logo img {
 	    height: 35px;
 	}
 	.sidenav a {
@@ -137,7 +149,7 @@ header{
     z-index: 999;
     top: 0;
 	list-style: none;
-    left: 0;
+    right: 0;
     background-color: #fff;
     overflow-x: hidden;
     transition: 0.2s;
@@ -162,6 +174,7 @@ header{
 .sidenav .closebtn {
     position: absolute;
     top: 0;
+
     right: 25px;
     font-size: 36px;
     margin-left: 50px;

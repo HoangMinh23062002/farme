@@ -1,47 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,600;1,200&display=swap');
 .product-menu{
     border-radius: 10px;
-    margin: 0 10.5%;
+    width: 78%;
     text-align: center;
+    align-items: center;
     background-color: #E1E1E1;
-    & .product-menu-bar{
-        display: flex;
-        height: 64px;
-        justify-content: center; 
-        & .index{
-            border-bottom:3px solid ;
-            font-weight: 700;
-            }
-        }
-        & li{
-            font-size: 18px;
-            padding: 20px 40px;
+    justify-content: center;
+        & .product-items{
+            align-items: center;
+            justify-content: center;
+            display: flex;
             list-style: none;
-        & a{
-            color: $color-menu;
-            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+            font-size: 18px;
+            & .product-menu-link{
+            padding: 21px 64px;
+            span{
+                padding-left: 4px;
+            }
+             a{
+                font-family: 'Montserrat', sans-serif;
+                text-decoration: none;
+                color:#656565;
+            } 
         }
-        & i{
-            padding-left: 10px;
+        & .active {
+            border-bottom: 4px solid black;
+            width: 2%;
+            display: flex;
+            margin-right: 64px;
+            justify-content: center;
+           a{
+            color: black;
+           }
         }
-    }}
+    }
+}
 
 .cart-list{
-    & .detail-cart{
+    & .cart-detail{
         margin-top: 32px;
         flex-wrap: wrap;
         display: flex;
+
         justify-content: center;
-        & .detail-cart-item{
-            width: 376px;
+        & .cart-item-detail{
+           width: 368px;
+           background-color: #E1E1E1;
             height: 247px;
-            background-color: #E1E1E1;
         }
-        // & .cart-item:nth-child(1n+2){
-        //     margin-left: 32px;
-        // } 
+
         & .cart-item{
             padding:0 16px;
+            & .infor-item{
+                h2{
+                    margin-top: 16px;
+                }
+            }
         } 
     }
 }
@@ -70,40 +86,17 @@
     }
     .product-menu{
 
-        .product-menu-bar{
-        li{
-            font-size: 10px;
-            padding: 10px 10px;
-      
-        }
+        
     }
     }    
 }
-}
-// 
+
 @media screen and (max-width: 500px) {
-    
-.cart-list{
-    // margin: %;
-    & .detail-cart{
-        & .cart-item{
-    
-        } 
-        // & .cart-item{
-        //     margin-left: 32px;
-        // } 
-    }
-}
     .product-menu{  
-          margin: 0 0;
+          margin: 0 10%;
         .product-menu-bar{
             margin-left: -40px;
 
-            li{
-                font-size: 13px;
-        }
-    
-    }
     .infor-item{
         text-align: center;
      h2{
@@ -118,3 +111,52 @@
     }
   }
 }
+}
+@media screen and (max-width: 1210px) {
+    .product-menu{
+        border-radius: 10px;
+        width: 78%;
+            & .product-items{
+                font-size: 15px;
+                & .product-menu-link{
+                padding: 21px 20px;
+                 a{
+             
+                } 
+            }
+            & .active {
+                width: 10%;
+                display: flex;
+                margin-right: 64px;
+                // margin-left: 30%;
+                justify-content: center;
+               a{
+                color: black;
+               }
+            }
+
+        }
+    }
+    
+  }
+  @media screen and (max-width: 759px) {
+    .product-menu{
+            & .product-items{
+                display: block;
+                & .product-menu-link{
+                 a{
+             
+                }
+            }
+            & .active {
+                width: 20%;
+                display: flex;
+                margin-left: 40%;
+                justify-content: center;
+               a{
+                color: black;
+               }
+            }
+        }
+    }   
+  }

@@ -1,125 +1,75 @@
+
 .about-us{
+    width: 100%;
     height: 900px;
-    text-align: center;
-    background-color: lightgray;
+    margin-top: 80px;
+    background-color: #E1E1E1;
+    & .overall-about-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    & .overall-title{
+        line-height: 39px;
+        font-size: 32px;
+       font-weight: 700;
+    }
+    & .overall-text{
+        margin: 5px 0 32px 0;
+        width: 60%;
+        line-height: 17.58px;
+    }
     & .read-more{
-        border-radius: 10px;
         width: 172px;
         height: 50px;
-        right: 45%;
-        position: absolute;
-        margin-top: 34.9%;
+        background-color: #404040;
+        border-radius: 10px;
         color: white;
-        background-color: black;
-    }
-
-    .overall-about-us {
-        margin-top: 19.6%;
-        position: absolute;
-     
-        & h1{
-            margin-bottom: 32px;
-        }
-        p{
-            margin-left: 27%;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            line-height: 1.4rem;
-        }
     }
 }
-@media screen and (max-width: 925px) {
+}
+@media screen and (max-width: 800px) {
     .about-us{
+        transition: 3s;
+        height: 500px;
+        margin-top: 50px;
+        & .overall-about-us{
+  
+        & .overall-title{
+  
+        }
+        & .overall-text{
+     
+            width: 95%;
+            line-height: 15.58px;
+        }
+        & .read-more{
+           
+        }
+    }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .about-us{
+        transition: 3s;
         height: 700px;
         & .overall-about-us{
-        p{
-            margin-left: 9%;
-            width: 80%;
+  
+        & .overall-title{
+  
         }
-        h1{
-            padding-top:15% ;
+        & .overall-text{
+     
+            width: 95%;
+            line-height: 15.58px;
         }
-    }
-}    
-}
-@media screen and (max-width: 666px) {
-    .about-us{
-        height: 650px;
-        .overall-about-us{
-        p{
-          font-size: 13px;
-        }
-        h1{
-            font-size: 18px;
-        }
-    }
-}    
-}
-@media screen and (max-width: 1350px) {
-    .about-us{
-
         & .read-more{
-            right: 42%;
-            margin-top: 54.9%;
-            
+           
         }
+    }
     }
 }
-@media screen and (max-width: 1040px) {
-    .about-us{
-
-        & .read-more{
-            right: 40%;
-            margin-top: 43.9%;
-            
-        }
-    }
-}
-@media screen and (max-width: 842px) {
-    .about-us{
-        height: 500px;
-        .overall-about-us {
-            margin-top: 1.6%;
-        & .read-more{
-            width: 102px;
-            height: 40px;
-            right: 36%;
-
-            color: white;
-        }
-    
-        }
-       
-            p{
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 3; /* number of lines to show */
-                line-clamp: 3; 
-                -webkit-box-orient: vertical;
-            }
-        }
-    }
-    @media screen and (max-width: 610px) {
-        .about-us{
-    
-            & .read-more{
-                right: 40%;
-                margin-top: 56.9%;
-                width: 102px;
-                height: 40px;
-            }
-        }
-    }
-    @media screen and (max-width: 430px) {
-        .about-us{
-            height: 300px;
-            & .read-more{
-                right: 40%;
-                margin-top: 64.9%;
-                width: 94px;
-                height: 36px;
-            }
-        }
-    }

@@ -1,23 +1,26 @@
 .footer{
     background-color: #404040;
-    height: 530px;
+    height: auto;
     color: white;
     & .footer-content{
         width: 100%;
-    .title-footer{
+    .footer-title{
      padding: 3.2% 0 0 0;
      & .footer-signup{
         justify-content: space-around;
         margin: 0 30%;
+        padding-right: -39%;
         border-radius: 20px;
         height: 48px;
         background-color: white;
      
         & button{
+            // padding-left: 10%;
             outline: none;
             border: white;
             background-color: white;
         }
+
      }
         h3{
             text-align: center;
@@ -29,10 +32,11 @@
             outline: none;
         }
         input{
+            font-family:'';
             padding: 20px;
             outline: none;
             height: 36px;
-            width: 70%;
+            width: 79%;
             border-radius: 15px;
             border: 1px solid white;
         }
@@ -76,7 +80,7 @@
     }}
 }
 .copyright{
-    margin: 32px 0;
+    padding: 10px 0 22px 0;
     text-align: center;
 }
 .horizontal-car{
@@ -89,8 +93,40 @@
     .character{
      display: block;
     }
-    .title-footer input{
 
+}
+@media screen and (max-width: 840px) {
+    .footer{
+        & .footer-content{
+        .footer-title{
+         & .footer-signup{
+            justify-content: space-around;
+            margin: 0 15%;
+            border-radius: 20px;
+            height: 48px;
+            width: 70%;
+            background-color: white;
+         
+            & button{
+                padding-left: 0%;
+                outline: none;
+                border: white;
+                background-color: white;
+            }
+         }
+            h3{
+               
+            }
+            & .input{
+            }
+            input{
+   
+            }
+        }
+        & .brand-name-footer{
+
+          
+        }}
     }
 }
 @media screen and (max-width: 800px) {
@@ -98,7 +134,13 @@
         justify-content: space-around;
         margin: 0 10%;
         border-radius: 20px;
-        // background-color: red;
     }
     
+}
+
+@media screen and (max-width: 488px) {
+    .footer .footer-content .footer-title input {
+        width: 72%;
+    }
+
 }

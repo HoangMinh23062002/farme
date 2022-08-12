@@ -48,11 +48,23 @@
             line-height: 15.58px;
         }
         & .read-more{
-           
+          
+                width: 102px;
+                height: 40px;
+            }
+            & .overall-title{
+                line-height: 39px;
+                font-size: 25px;
+               font-weight: 700;
+            }
+            & .overall-text{
+                font-size: 14px;
+                margin: 5px 0 32px 0;
+            }
         }
     }
     }
-}
+
 @media screen and (max-width: 1000px) {
     .about-us{
         transition: 3s;

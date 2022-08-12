@@ -532,6 +532,19 @@ header {
     width: 95%;
     line-height: 15.58px;
   }
+  .about-us .overall-about-us .read-more {
+    width: 102px;
+    height: 40px;
+  }
+  .about-us .overall-about-us .overall-title {
+    line-height: 39px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .about-us .overall-about-us .overall-text {
+    font-size: 14px;
+    margin: 5px 0 32px 0;
+  }
 }
 @media screen and (max-width: 1000px) {
   .about-us {
@@ -596,7 +609,7 @@ header {
   font-size: 32px;
 }
 .footer .footer-content .brand-name-footer .label {
-  padding: 0 5%;
+  padding: 0 0 0 5%;
   margin-bottom: 60px;
 }
 .footer .footer-content .brand-name-footer .site, .footer .footer-content .brand-name-footer .term {

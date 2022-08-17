@@ -43,16 +43,14 @@
         margin-top: 32px;
         flex-wrap: wrap;
         display: flex;
-
         justify-content: center;
         & .cart-item-detail{
            width: 368px;
            background-color: #E1E1E1;
             height: 247px;
         }
-
         & .cart-item{
-            padding:16px 16px;
+            margin:16px 16px;
             & .infor-item{
                 h2{
                     margin-top: 16px;

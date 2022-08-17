@@ -541,7 +541,7 @@ button {
   height: 247px;
 }
 .cart-list .cart-detail .cart-item {
-  padding: 16px 16px;
+  margin: 16px 16px;
 }
 .cart-list .cart-detail .cart-item .infor-item h2 {
   margin-top: 16px;

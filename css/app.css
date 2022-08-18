@@ -61,7 +61,7 @@ button {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   text-align: center;
@@ -75,7 +75,7 @@ button {
   transition: all 0.35s ease;
 }
 .header.on-scroll {
-  background: rgb(231, 130, 130);
+  background: white;
   box-shadow: 4px 4px 4px 4px rgb(234, 228, 228);
 }
 
@@ -113,6 +113,9 @@ button {
   align-items: center;
   row-gap: 1.25rem;
 }
+.menu-inner-item:last-child {
+  margin-left: 15px;
+}
 .menu-link {
   font-size: 1rem;
   line-height: 2.5;
@@ -132,7 +135,7 @@ button {
   cursor: pointer;
   border-bottom: 4px solid black;
 }
-@media only screen and (min-width: 55rem) {
+@media only screen and (min-width: 928px) {
   .menu {
     position: relative;
     top: 0;
@@ -146,7 +149,7 @@ button {
   .menu-inner {
     display: flex;
     flex-direction: row;
-    column-gap: 2rem;
+    column-gap: 2.5rem;
     margin: 0 auto;
   }
   .menu-link {
@@ -157,7 +160,7 @@ button {
   }
 }
 
-@media screen and (max-width: 879px) {
+@media screen and (max-width: 926px) {
   .navbar img {
     position: absolute;
     right: 4%;
@@ -180,7 +183,7 @@ button {
   transform: rotate(0deg);
   transition: 0.35s ease;
 }
-@media only screen and (min-width: 55rem) {
+@media only screen and (min-width: 928px) {
   .burger {
     display: none;
     visibility: hidden;
@@ -310,14 +313,15 @@ button {
 }
 
 .wiper {
-  height: 674px;
+  height: 800px;
   width: 100%;
+  position: relative;
   background-color: lightgray;
 }
 
 .swiper {
   margin: 0 11%;
-  top: 25%;
+  top: 24.5%;
   color: black;
 }
 .swiper .swiper {
@@ -331,8 +335,11 @@ button {
 }
 .swiper .content-slider h2 {
   font-size: 48px;
+  margin-bottom: 16px;
+  line-height: 58.51px;
 }
 .swiper .content-slider p {
+  line-height: 19.5px;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: #454545;
@@ -370,11 +377,11 @@ button {
   }
 }
 @media screen and (max-width: 550px) {
-  .content-slider {
+  .swiper .content-slider {
     margin-top: 10%;
   }
-  .content-slider h2 {
-    font-size: 19px;
+  .swiper .content-slider h2 {
+    font-size: 29px;
     margin-bottom: 10px;
   }
 }
@@ -400,12 +407,6 @@ button {
   .content-slider {
     padding-top: 20%;
     padding-left: 14%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .content-slider h2 {
-    font-size: 19px;
-    margin-bottom: 10px;
   }
 }
 .product-title h3 {
@@ -558,7 +559,7 @@ button {
 }
 
 .cart-list .cart-detail {
-  margin-top: 32px;
+  margin-top: 16px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -654,7 +655,8 @@ button {
 }
 .about-us {
   width: 100%;
-  height: 900px;
+  min-height: 900px;
+  height: 37vw;
   margin-top: 80px;
   background-color: #E1E1E1;
 }
@@ -674,7 +676,7 @@ button {
   font-weight: 700;
 }
 .about-us .overall-about-us .overall-text {
-  margin: 5px 0 32px 0;
+  margin: 32px 0 32px 0;
   width: 60%;
   line-height: 17.58px;
 }
@@ -686,10 +688,16 @@ button {
   color: white;
 }
 
+@media screen and (max-width: 500px) {
+  .about-us {
+    transition: 3s;
+    min-height: 100px;
+  }
+}
 @media screen and (max-width: 800px) {
   .about-us {
     transition: 3s;
-    height: 500px;
+    min-height: 500px;
     margin-top: 50px;
   }
   .about-us .overall-about-us .overall-text {
@@ -713,7 +721,7 @@ button {
 @media screen and (max-width: 1000px) {
   .about-us {
     transition: 3s;
-    height: 700px;
+    min-height: 700px;
   }
   .about-us .overall-text {
     width: 95%;
@@ -845,6 +853,51 @@ button {
 @media screen and (max-width: 488px) {
   .footer .footer-content .footer-title input {
     width: 72%;
+  }
+}
+.signup__wrapper {
+  display: flex;
+  max-width: 616px;
+  margin: 0px auto 0;
+  background-color: white;
+  border-radius: 99px;
+  overflow: hidden;
+}
+.signup__input {
+  display: flex;
+  flex: 1;
+  min-height: 48px;
+  border-radius: 99px;
+  border: none;
+  outline: none;
+}
+.signup__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  height: 100%;
+  padding: 0 40px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.signup__button:hover {
+  background-color: #333333;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .signup {
+    margin: 0 3px;
+  }
+  .signup__button {
+    font-size: 12px;
+    padding: 0 30px;
   }
 }
 

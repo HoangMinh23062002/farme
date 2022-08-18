@@ -377,13 +377,28 @@ button {
   }
 }
 @media screen and (max-width: 550px) {
+  .wiper {
+    margin: 0 0%;
+  }
   .swiper .content-slider {
+    width: 100%;
     margin-top: 10%;
   }
   .swiper .content-slider h2 {
     line-height: 34.51px;
-    font-size: 29px;
+    font-size: 15px;
     margin-bottom: 10px;
+    width: 100%;
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: "prev";
+    padding-right: 35px;
+    font-size: 20px;
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: "next";
+    font-size: 20px;
+    padding-left: 35px;
   }
 }
 @media screen and (max-width: 710px) {

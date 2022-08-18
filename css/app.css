@@ -92,7 +92,7 @@ button {
 
 .menu {
   position: fixed;
-  top: -100%;
+  top: -500%;
   left: 0;
   width: 100%;
   height: auto;

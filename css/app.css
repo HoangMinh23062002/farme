@@ -633,6 +633,9 @@ button {
   .product-menu .product-menu-bar .product-title h3 {
     font-size: 19px;
   }
+  .cart-list .cart-detail .cart-item-detail {
+    width: 327px;
+  }
 }
 @media screen and (max-width: 1210px) {
   .product-menu {

@@ -102,7 +102,7 @@ button {
    cursor: pointer;
    border-bottom: 4px solid black;
   }
-  @media only screen and (min-width: 928px) {
+  @media only screen and (min-width: 938px) {
     position: relative;
     top: 0;
     width: auto;
@@ -128,7 +128,7 @@ button {
     }
   }
 }
-@media screen and (max-width: 926px) {
+@media screen and (max-width: 936px) {
   .navbar img {
     position: absolute;
     right: 4%;
@@ -151,7 +151,7 @@ button {
   transform: rotate(0deg);
   transition: 0.35s ease;
 
-  @media only screen and (min-width: 928px) {
+  @media only screen and (min-width: 938px) {
     display: none;
     visibility: hidden;
   }
@@ -205,12 +205,12 @@ button {
     align-items: center;
     row-gap: 3rem;
 
-    @media only screen and (min-width: 48rem) {
+    @media only screen and (min-width: 49rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       justify-content: center;
     }
 
-    @media only screen and (min-width: 64rem) {
+    @media only screen and (min-width: 65rem) {
       grid-template-columns: 1fr max-content;
       column-gap: 4rem;
       margin-top: 3rem;
@@ -226,13 +226,13 @@ button {
     object-fit: cover;
     justify-self: center;
 
-    @media only screen and (min-width: 48rem) {
+    @media only screen and (min-width: 49rem) {
       order: 1;
       max-width: 20rem;
       height: auto;
     }
 
-    @media only screen and (min-width: 64rem) {
+    @media only screen and (min-width: 65rem) {
       max-width: 25rem;
       height: auto;
       margin-right: 5rem;

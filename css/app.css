@@ -390,12 +390,14 @@ button {
     margin-bottom: 10px;
     width: 100%;
   }
-  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
     content: "prev";
     padding-right: 35px;
     font-size: 20px;
   }
-  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
     content: "next";
     font-size: 20px;
     padding-left: 35px;

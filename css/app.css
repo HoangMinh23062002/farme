@@ -319,7 +319,7 @@ button {
 
 .swiper {
   margin: 0 11%;
-  top: 24.5%;
+  top: 22.7%;
   color: black;
 }
 .swiper .swiper {
@@ -864,7 +864,7 @@ button {
 
 @media screen and (max-width: 635px) {
   .signup__wrapper {
-    margin: 0px 10px;
+    margin: 0px 20px;
   }
 }
 @media screen and (max-width: 500px) {

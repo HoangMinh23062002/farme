@@ -127,6 +127,18 @@
         padding:27px  0 21px 0;
         // margin: 20px 34px ;
     }
+    .cart-list{
+        & .cart-detail{
+            margin-right: 0px;
+        }}
 
 }
 
+@media screen and (max-width: 1323px) {
+
+    .cart-list{
+        & .cart-detail{
+            margin-right: 0px;
+        }}
+
+}

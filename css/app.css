@@ -634,6 +634,14 @@ button {
     font-size: 12px;
     padding: 27px 0 21px 0;
   }
+  .cart-list .cart-detail {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1323px) {
+  .cart-list .cart-detail {
+    margin-right: 0px;
+  }
 }
 .about-us {
   width: 100%;

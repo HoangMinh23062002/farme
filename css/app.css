@@ -546,6 +546,12 @@ button {
     font-size: 20px;
   }
 }
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 23px;
+  left: 0;
+  width: 100%;
+}
+
 .product-scrollmenu {
   border-radius: 10px;
   position: relative;
@@ -654,7 +660,7 @@ button {
 .about-us .overall-about-us .overall-text {
   color: #404040;
   margin: 32px 0 32px 0;
-  width: 60%;
+  width: 47%;
   line-height: 17.58px;
 }
 .about-us .overall-about-us .read-more {

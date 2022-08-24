@@ -637,6 +637,9 @@ button {
   .cart-list .cart-detail {
     margin-right: 0px;
   }
+  .cart-list .cart-detail .cart-item {
+    padding: 23px 0px;
+  }
 }
 @media screen and (max-width: 1323px) {
   .cart-list .cart-detail {

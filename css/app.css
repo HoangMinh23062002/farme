@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -54,10 +54,9 @@ button {
 }
 
 .overall-content {
-  max-width: 75rem;
+  max-width: 73.7rem;
   height: auto;
   margin: 0 auto;
-  padding: 0 1.25rem;
 }
 
 .header {
@@ -69,14 +68,12 @@ button {
   text-align: center;
   z-index: 100;
   background-color: white;
+  width: 1920px;
   width: 100%;
-  height: auto;
-  margin: 0 auto;
   transition: all 0.35s ease;
 }
 .header.on-scroll {
-  background: white;
-  box-shadow: 4px 4px 4px 4px rgb(234, 228, 228);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .navbar {
@@ -98,11 +95,11 @@ button {
   height: auto;
   padding: 4rem 0 3rem;
   overflow: hidden;
-  background-color: rgb(244, 135, 153);
-  transition: all 1s ease-in-out;
+  background-color: white;
+  transition: all 0.35s ease-in-out;
 }
 .menu.is-active {
-  top: 12%;
+  top: 80px;
   width: 100%;
   height: auto;
 }
@@ -126,9 +123,9 @@ button {
 .menu-link span {
   background-color: black;
   color: white;
-  padding: 6px 12px;
+  padding: 5px 8px;
   border-radius: 20px;
-  margin-left: 20px;
+  margin-left: 14px;
 }
 .menu-link:hover {
   transition: 2s;
@@ -163,10 +160,11 @@ button {
 @media screen and (max-width: 936px) {
   .navbar img {
     position: absolute;
-    right: 4%;
+    left: 4%;
   }
 }
 .burger {
+  margin-left: 88%;
   position: relative;
   display: block;
   cursor: pointer;
@@ -536,62 +534,77 @@ button {
     width: 100%;
     margin: 12 12px;
   }
+  .feature-product h3 {
+    font-size: 20px;
+    text-align: center;
+    font-style: bold;
+    line-height: 39px;
+    margin-top: 68px;
+    margin-bottom: 32px;
+  }
+  .product-title h3 {
+    font-size: 20px;
+  }
 }
-.product-menu {
+.product-scrollmenu {
   border-radius: 10px;
-  width: 78%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  align-items: center;
   background-color: #E1E1E1;
-  justify-content: center;
-}
-.product-menu .product-items {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  font-size: 18px;
-}
-.product-menu .product-items .product-menu-link {
-  padding: 21px 64px;
-}
-.product-menu .product-items .product-menu-link span {
-  padding-left: 4px;
-}
-.product-menu .product-items .product-menu-link a {
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  color: #656565;
-}
-.product-menu .product-items .active {
-  border-bottom: 4px solid black;
-  width: 2%;
-  display: flex;
-  margin-right: 64px;
-  justify-content: center;
-}
-.product-menu .product-items .active a {
-  color: black;
+  overflow: auto;
+  height: 64px;
+  white-space: nowrap;
 }
 
+.active {
+  font-weight: 700;
+  border-bottom: 4px solid #000000;
+}
+
+.product-scrollmenu a {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  color: #656565;
+  text-align: center;
+  padding: 21px 0 21px 0;
+  margin: 0 64px;
+  text-decoration: none;
+}
+
+.product-scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-list {
+  width: 100%;
+}
 .cart-list .cart-detail {
-  margin-top: 16px;
+  margin-top: 30px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 .cart-list .cart-detail .cart-item-detail {
-  width: 368px;
+  border-radius: 10px;
+  width: 375px;
   background-color: #E1E1E1;
   height: 247px;
 }
 .cart-list .cart-detail .cart-item {
-  margin: 16px 16px;
+  padding: 32px 16px;
+}
+.cart-list .cart-detail .cart-item .infor-item {
+  width: 366px;
 }
 .cart-list .cart-detail .cart-item .infor-item h2 {
+  color: #404040;
   margin-top: 16px;
+  margin-bottom: 4px;
 }
 
 .infor-item p {
@@ -599,12 +612,6 @@ button {
   color: #656565;
 }
 
-@media screen and (max-width: 909px) {
-  .product-menu .product-menu-bar li {
-    font-size: 14px;
-    padding: 23px 17px;
-  }
-}
 @media screen and (max-width: 594px) {
   .infor-item {
     text-align: center;
@@ -617,69 +624,16 @@ button {
   }
 }
 @media screen and (max-width: 500px) {
-  .product-menu {
-    margin: 0 10%;
-  }
-  .product-menu .product-menu-bar {
-    margin-left: -40px;
-  }
-  .product-menu .product-menu-bar .infor-item {
-    text-align: center;
-  }
-  .product-menu .product-menu-bar .infor-item h2 {
-    font-size: 16px;
-  }
-  .product-menu .product-menu-bar .infor-item p {
+  .product-scrollmenu a {
     font-size: 12px;
-  }
-  .product-menu .product-menu-bar .product-title h3 {
-    font-size: 19px;
-  }
-  .cart-list .cart-detail .cart-item-detail {
-    width: 327px;
-  }
-}
-@media screen and (max-width: 1210px) {
-  .product-menu {
-    border-radius: 10px;
-    width: 78%;
-  }
-  .product-menu .product-items {
-    font-size: 15px;
-  }
-  .product-menu .product-items .product-menu-link {
-    padding: 21px 20px;
-  }
-  .product-menu .product-items .active {
-    width: 10%;
-    display: flex;
-    margin-right: 64px;
-    justify-content: center;
-  }
-  .product-menu .product-items .active a {
-    color: black;
-  }
-}
-@media screen and (max-width: 759px) {
-  .product-menu .product-items {
-    display: block;
-  }
-  .product-menu .product-items .active {
-    width: 20%;
-    display: flex;
-    margin-left: 40%;
-    justify-content: center;
-  }
-  .product-menu .product-items .active a {
-    color: black;
+    padding: 27px 0 21px 0;
   }
 }
 .about-us {
   width: 100%;
-  min-height: 900px;
-  height: 47vw;
+  height: 900px;
   margin-top: 80px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
 }
 .about-us .overall-about-us {
   display: flex;
@@ -692,11 +646,13 @@ button {
   margin: 0 auto;
 }
 .about-us .overall-about-us .overall-title {
+  color: #000000;
   line-height: 39px;
   font-size: 32px;
   font-weight: 700;
 }
 .about-us .overall-about-us .overall-text {
+  color: #404040;
   margin: 32px 0 32px 0;
   width: 60%;
   line-height: 17.58px;
@@ -712,13 +668,13 @@ button {
 @media screen and (max-width: 500px) {
   .about-us {
     transition: 3s;
-    min-height: 100px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 800px) {
   .about-us {
     transition: 3s;
-    min-height: 500px;
+    height: 500px;
     margin-top: 50px;
   }
   .about-us .overall-about-us .overall-text {
@@ -781,19 +737,6 @@ button {
   line-height: 24px;
   font-family: "Poppins", sans-serif;
 }
-.footer .footer-content .footer-title .input {
-  outline: none;
-}
-.footer .footer-content .footer-title input {
-  font-family: "";
-  padding: 20px;
-  outline: none;
-  font-family: "Poppins", sans-serif;
-  height: 36px;
-  width: 79%;
-  border-radius: 15px;
-  border: 1px solid white;
-}
 .footer .footer-content .brand-name-footer {
   flex-wrap: wrap;
   display: flex;
@@ -809,7 +752,7 @@ button {
   margin-bottom: 60px;
 }
 .footer .footer-content .brand-name-footer .site, .footer .footer-content .brand-name-footer .term {
-  color: #656565;
+  color: #9D9D9D;
 }
 .footer .footer-content .brand-name-footer .link {
   margin-top: 44%;
@@ -885,6 +828,7 @@ button {
   overflow: hidden;
 }
 .signup__input {
+  padding: 10px;
   display: flex;
   flex: 1;
   min-height: 48px;
@@ -912,6 +856,11 @@ button {
   color: white;
 }
 
+@media screen and (max-width: 635px) {
+  .signup__wrapper {
+    margin: 0px 10px;
+  }
+}
 @media screen and (max-width: 500px) {
   .signup {
     margin: 0 3px;
@@ -919,6 +868,31 @@ button {
   .signup__button {
     font-size: 12px;
     padding: 0 30px;
+  }
+  .footer .footer-content .brand-name-footer {
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+  }
+  .footer .footer-content .brand-name-footer .label {
+    padding: 0 0 0 0%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .footer .footer-content .brand-name-footer .site, .footer .footer-content .brand-name-footer .term {
+    color: #9D9D9D;
+  }
+  .footer .footer-content .brand-name-footer .link {
+    margin-top: 4%;
+  }
+  .footer .footer-content .brand-name-footer .link li {
+    padding: 5% 0;
+  }
+  .footer .footer-content .brand-name-footer .character {
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 }
 
